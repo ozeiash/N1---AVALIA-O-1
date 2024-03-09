@@ -14,6 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+package avaliacao.n1;
 
 /**
  *
@@ -23,10 +24,9 @@
  */
 import java.util.Scanner; //Importa a biblioteca Scanner
 
-public class Prova1 { //Classe criada para o código
+public class Prova1 {
 
     public static void main(String[] args) { //Bloco de instruções que inicia o fluxo de processamento
-
         int opcao = 0, qde_cafeCoado = 0, qde_capuccino = 0, //Declaração e inicialização das variáveis tipo inteiras
                 qde_ovomaltine = 0, qde_cafes_vendidos;
         double valor_coado, valor_capuccino, //Declaração das variáveis tipo double
@@ -52,7 +52,7 @@ public class Prova1 { //Classe criada para o código
                 qde_ovomaltine++; //A quantidade de ovomaltine será incementada em mais 1
             } else if (opcao != 4) { //Caso o usuário digite algo maior que 4, será executado o próximo comando
                 System.out.println("Opção inválida"); //Apresenta na tela a mensagem "Opção inválida
-            } 
+            }
 
         } while (opcao != 4); //Enquanto a opção digitada for menor que 4 o programa executará os próximos comandos
 
@@ -70,4 +70,4 @@ public class Prova1 { //Classe criada para o código
                 + " ­ valor cafés vendidos: " + valor_cafes_vendidos); //Apresenta na tela o total de cafés vendidos e total geral da conta do cliente
     } //Encerra o bloco main
 
-} //Encerra a classe
+}
